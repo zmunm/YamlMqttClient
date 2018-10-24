@@ -1,0 +1,10 @@
+# Size of the universe
+option:
+  LogLevel: 0
+  Domain: 192.168.0.127
+  Port: 1883
+  SSL: false
+  UserName: root
+  Password: 1234
+  LoopInterval: 3000
+  LoopCount: 30000
