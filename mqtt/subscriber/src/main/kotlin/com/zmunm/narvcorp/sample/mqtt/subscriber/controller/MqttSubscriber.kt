@@ -21,7 +21,7 @@ class MqttSubscriber @Throws(MqttException::class) constructor(val option: MqttM
 		client?.disconnect()
 		client = MqttClient(
 				option.url,
-				"SMART_CRADLE_MQTT_SUB",
+				"MQTT_SUB",
 				MqttDefaultFilePersistence(System.getProperty("java.io.tmpdir"))
 		).apply{setCallback(object : MqttCallback{
 			override fun deliveryComplete(token: IMqttDeliveryToken?) {}
